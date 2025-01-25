@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lacquer;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.overall {
+    height: 500px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    align-items: center;
+}
+
+.reset-header-button {
+    background-color: black;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.reset-header-button:hover {
+    opacity: 70%;
+    transition: opacity 0.3s ease;
+}
+
+.blood-icon {
+    height: 60px;
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+    justify-content: space-around;
+}
+
+.release-button, 
+.products-button,
+.preorder-button,
+.release-button-preorder {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: lacquer;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.release-button-preorder:hover,
+.release-button:hover,
+.products-button:hover,
+.preorder-button:hover {
+    opacity: 70%;
+    transition: opacity 0.3s ease;
+}
+
+.release-button {
+    margin-left: 250px;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    border-style: solid;
+    border-color: darkred;
+    background: linear-gradient(45deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+}
+
+.main-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    height: 100vh;
+    text-align: center;      /* Ensure text is centered */
+}
+
+.preorder-error-message {
+    color: white;
+    font-size: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .10em solid red;
+    display: inline-block; /* Keep text inline so it doesn't stretch */
+    width: 0;
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 110%; /* The text container expands to its full width */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.release-button-preorder {
+    margin-top: 20px;  /* Adjust this value as needed */
+    margin-bottom: 250px;
+    font-size: 25px;
+    color: red;
+}

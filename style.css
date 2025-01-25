@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lacquer;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    align-items: center;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+
+.reset-header-button {
+    background-color: black;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.reset-header-button:hover {
+  opacity: 70%;
+  transition: opacity 0.3s ease;
+}
+
+.blood-icon {
+    height: 60px;
+}
+
+.title {
+    color: red;
+    font-family: lacquer;
+    font-size: 250px;
+    margin-left: 450px;
+    margin-top: 100px;
+    margin-bottom: -30px;
+    animation: 5s slide-right;
+}
+
+.sub-title {
+    color: red;
+    margin-left: 620px;
+    font-size: 75px;
+    font-family: lacquer;
+    animation: 5s slide-left;
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -1000px;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 1800px;
+    }
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+    justify-content: space-around;
+}
+
+.release-button, 
+.products-button,
+.preorder-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: lacquer;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.release-button:hover,
+.products-button:hover,
+.preorder-button:hover {
+    opacity: 70%;
+    transition: opacity 0.3s ease;
+}
+
+.release-button {
+    margin-left: 250px;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    border-style: solid;
+    border-color: darkred;
+    background: linear-gradient(45deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+  }
+
+  .div-2-main {
+    display: flex;
+    height: 700px;
+  }
+
+  .left-section-about,
+  .right-section-about {
+    width: 50%;
+    height: 800px;
+  }
+
+  .about-header {
+    color: white;
+    margin-top: 300px;
+    margin-left: 285px;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: lacquer;
+    
+  }
+
+  .about-section {
+    width: 500px;
+    margin-left: 110px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: lacquer;
+  }
+
+  .explore-button {
+    background-color: red;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-top: 50px;
+    display: block;
+    width: 5%;
+    margin-left: 290px;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: lacquer;
+    text-align: center;
+  }
+
+  .explore-button:hover {
+    opacity: 50%;
+  }
+
+  .energy-drink-img {
+    width: 250px;
+    margin-top: 320px;
+    margin-left: 100px;
+  }
+
+  .energy-drink-img-2 {
+    width: 270px;
+    margin-top: 320px;
+    margin-left: -50px;
+  }
+
+  /* title animation */
+  .letter-a {
+    animation: blink-animation 0.5s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+  }
+
+  .letter-n {
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 4s steps(5, start) infinite;
+  }
+
+  @keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+  }
+
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .bottom-header {
+    position: static;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+  }
+
+  .left {
+    height: 100px;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .right {
+    width: 50%;
+    height: 100px;
+    justify-content: space-around;
+  }
+
+  .trademark {
+    margin-left: 500px;
+    color: white;
+    margin-top: 50px;
+  }
+
+  .social-media-p {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .fa {
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    color: white;
+    background: #3B5998;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background-color: white;
+  }
+
+  .fa-reddit {
+    background: rgb(236, 54, 51);
+    color: white;
+    border-radius: 20px;
+  }
+
+
+

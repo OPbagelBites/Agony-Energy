@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: lacquer;
+  background-color: black;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    align-items: center;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+
+.reset-header-button {
+    background-color: black;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.reset-header-button:hover {
+  opacity: 70%;
+  transition: opacity 0.3s ease;
+}
+
+.blood-icon {
+    height: 60px;
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+    justify-content: space-around;
+}
+
+.release-button, 
+.products-button,
+.preorder-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: lacquer;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.release-button:hover,
+.products-button:hover,
+.preorder-button:hover {
+  opacity: 70%;
+  transition: opacity 0.3s ease;
+}
+
+.release-button {
+    margin-left: 250px;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    border-style: solid;
+    border-color: darkred;
+    background: linear-gradient(45deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+  }
+
+  .main-section {
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#countdown {
+  font-size: 100px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid red; /* Cursor effect */
+  animation: typing 4s steps(50) 1s forwards, blink 0.75s step-end infinite;
+  width: 100%; /* Make sure it doesn't overflow the container */
+  box-sizing: border-box; /* Ensure padding/margin don't affect width */
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 101%;
+  }
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
+.quotes {
+    font-size: 40px;
+}
+
+.author {
+    font-size: 30px;
+}
+
+.bottom-header {
+    position: static;
+    margin-top: 500px;
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+  }
+
+  .left {
+    height: 100px;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .right {
+    width: 50%;
+    height: 100px;
+    justify-content: space-around;
+  }
+
+  .trademark {
+    margin-left: 500px;
+    color: white;
+    margin-top: 50px;
+  }
+
+  .social-media-p {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .fa {
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    color: white;
+    background: #3B5998;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background-color: white;
+  }
+
+  .fa-reddit {
+    background: rgb(236, 54, 51);
+    color: white;
+    border-radius: 20px;
+  }
